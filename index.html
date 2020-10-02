@@ -6,6 +6,7 @@
     <title>
       ISSA
     </title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://icon-25d73.web.app/issa-logo.png">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
@@ -16,6 +17,18 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
     <link href="css/animate.css" rel="stylesheet" type="text/css" />
+    <style>
+    #icon:hover{
+      transform: rotate(360deg);
+    }
+    #particles-js{
+      width: 100%;
+      height: 100%;
+      background-image: url("https://twelvesec.com/wp-content/uploads/2020/03/security.jpg");
+      background-size: cover;
+      opacity: 0.7;
+    }
+    </style>
   </head>
   <body>
     <!--Header_section-->
@@ -23,7 +36,7 @@
       <div class="container">
         <div class="header_box">
           <div class="logo">
-
+            <img src="https://icon-25d73.web.app/issa-logo.png" width="100px" alt="">
           </div>
           <nav class="navbar navbar-inverse" role="navigation">
             <div class="navbar-header">
@@ -41,13 +54,9 @@
             </div>
             <div id="main-nav" class="collapse navbar-collapse navStyle">
               <ul class="nav navbar-nav" id="mainNav">
-                <li class="active">
-                  <a href="#" class="wow fadeInDown scroll-link">Home</a>
-                </li>
-
                 <li><a href="#aboutUs" class="wow fadeInDown scroll-link">About Us</a></li>
                 <li><a href="#Portfolio" class="wow fadeInDown scroll-link">Events</a></li>
-                <li><a href="#Portfolio" class="wow fadeInDown scroll-link">Projects</a></li>
+                <li><a href="#Project" class="wow fadeInDown scroll-link">Projects</a></li>
                 <li><a href="#team" class="wow fadeInDown scroll-link">Team</a></li>
               </ul>
             </div>
@@ -66,9 +75,8 @@
       <div class="">
         <h2 class="ml2 animated bounceIn wow" style="font-size: 45px; font-weight: 900;">INFORMATION SYSTEM SECURITY ASSOCIATION </h2>
         <h2 style="font-size: 50px;" class="wow fadeInDown delay-05s">(ISSA)</h2>
-
-        <img src="https://twelvesec.com/wp-content/uploads/2020/03/security.jpg" alt="" class="fade" >
-
+        <div id="particles-js">
+      </div>
         </div>
       </div>
     </section>
@@ -76,7 +84,7 @@
 
     <section id="aboutUs">
       <!--Aboutus-->
-      <div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
+      <div class="inner_wrapper aboutUs-container fadeInLeft animated wow delay-02s">
         <div class="container">
           <h2>About Us</h2>
 
@@ -99,7 +107,7 @@
                     </p>
                   </div>
                   <!-- /.col-md-6 -->
-                  <div class="col-md-6">
+                  <div class="col-md-6 fadeInLeft animated wow delay-02s">
                     <h3>NIE – ISSA STUDENT CHAPTER</h3>
                     <p>
                       In an initiative taken up by the Department of Computer Science and Engineering under the guidance of Dr. G Ravi(Principal, NIE), Dr. H. D. Phaneendra(HOD CSE) and Dr. Shrirang. A Kulkarni(Professor, CSE), Ambitious Fourth semester students of The National Institute of Engineering, Mysore have collaborated to form and manage a local ISSA chapter at the college for the benefit of the student community.
@@ -142,16 +150,16 @@
       <div class="container portfolio_title">
         <!-- Title -->
         <div class="section-title">
-          <h2>EVENTS</h2>
+          <h2 class="animated bounceIn wow delay-02s">EVENTS</h2>
         </div class="container">
-        <img style="padding:20px;" class="col-md-3 col-lg-3" src="img/poster.jpeg">
-        <img style="padding:20px;filter:blur(8px);" class="col-lg-3 col-md-3" src="img/poster.jpeg">
-        <img style="padding:20px;filter:blur(10px);" class="col-lg-3 col-md-3" src="img/poster.jpeg">
-        <img style="padding:20px;filter:blur(10px);" class="col-lg-3 col-md-3" src="img/poster.jpeg">
+        <img style="padding:20px;" class="col-md-3 col-lg-3 fadeInLeft animated wow" src="img/poster.jpeg">
+        <img style="padding:20px;filter:blur(8px);" class="col-lg-3 col-md-3 fadeInLeft animated wow" src="img/poster.jpeg">
+        <img style="padding:20px;filter:blur(10px);" class="col-lg-3 col-md-3 fadeInLeft animated wow" src="img/poster.jpeg">
+        <img style="padding:20px;filter:blur(10px);" class="col-lg-3 col-md-3 fadeInLeft animated wow" src="img/poster.jpeg">
       </div>
     </section>
     <section>
-      <h2>PROJECTS</h2>
+      <h2 class="animated bounceIn wow delay-02s" id="Project">PROJECTS</h2>
     </div class="container">
     <img class="animated bounceIn wow delay-03s d-flex justify-content-center" src="img/cmngsoon.jpg">
   </div>
@@ -442,7 +450,8 @@
     </div>
     <!-- Copyright -->
     </footer>
-
+    <script src="js/particles.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
